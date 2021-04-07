@@ -1,0 +1,13 @@
+2021/04/06 21:33:17 {"callers":["/home/bshark/Project/golang/ri-blog/main.go:25 main.init.0"],"level":"error","message":"app.BindAndValid errs: Name长度必须至少为3个字符,CreatBy为必填字段","time":1617715997008581926}
+2021/04/06 21:33:25 {"callers":["/home/bshark/Project/golang/ri-blog/main.go:25 main.init.0"],"level":"error","message":"app.BindAndValid errs: CreatBy为必填字段","time":1617716005381105862}
+2021/04/06 21:34:30 {"callers":["/home/bshark/Project/golang/ri-blog/main.go:25 main.init.0"],"level":"error","message":"app.BindAndValid errs: CreatBy为必填字段","time":1617716070429052443}
+2021/04/06 21:34:42 {"callers":["/home/bshark/Project/golang/ri-blog/main.go:25 main.init.0"],"level":"error","message":"app.BindAndValid errs: CreatBy为必填字段","time":1617716082759231889}
+2021/04/06 21:34:45 {"callers":["/home/bshark/Project/golang/ri-blog/main.go:25 main.init.0"],"level":"error","message":"app.BindAndValid errs: CreatBy为必填字段","time":1617716085908112203}
+2021/04/06 21:35:50 {"callers":["/home/bshark/Project/golang/ri-blog/main.go:25 main.init.0"],"level":"error","message":"app.BindAndValid errs: CreatBy为必填字段","time":1617716150795489405}
+2021/04/06 21:35:57 {"callers":["/home/bshark/Project/golang/ri-blog/main.go:25 main.init.0"],"level":"error","message":"app.BindAndValid errs: CreatBy为必填字段","time":1617716157287701466}
+2021/04/06 21:37:13 {"callers":["/home/bshark/Project/golang/ri-blog/main.go:25 main.init.0"],"level":"error","message":"app.BindAndValid errs: CreatBy为必填字段","time":1617716233029127216}
+2021/04/06 21:39:50 {"callers":["/home/bshark/Project/golang/ri-blog/main.go:25 main.init.0"],"level":"error","message":"app.BindAndValid errs: CreatedBy长度必须至少为3个字符","time":1617716390524507610}
+2021/04/06 21:39:56 {"callers":["/home/bshark/Project/golang/ri-blog/main.go:25 main.init.0"],"level":"error","message":"svc.CreatTag err: Error 1054: Unknown column 'created_by' in 'field list'","time":1617716396416501417}
+2021/04/06 21:53:46 {"callers":["/home/bshark/Project/golang/ri-blog/main.go:25 main.init.0"],"level":"error","message":"app.BindAndValid errs: Name长度必须至少为3个字符,State为必填字段","time":1617717226989224633}
+2021/04/06 21:55:20 {"callers":["/home/bshark/Project/golang/ri-blog/main.go:25 main.init.0"],"level":"error","message":"svc.UpdateTag err: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?AND is_del = ?))' at line 1","time":1617717320029434193}
+2021/04/06 21:57:45 {"callers":["/home/bshark/Project/golang/ri-blog/main.go:25 main.init.0"],"level":"error","message":"svc.UpdateTag err: sql: expected 6 arguments, got 5","time":1617717465715303075}
