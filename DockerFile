@@ -1,0 +1,31 @@
+FROM golang:buster as builder
+
+ENV GOPROXY=https://goproxy.cn
+
+WORKDIR /build
+
+COPY . .
+
+RUN GO111MODULE=on \
+    CGO_ENABLED=0 \
+    GOOS=linux \
+    GOARCH=amd64 \
+    go build -o Ri-Blog .
+
+FROM debian:stretch-slim as runner
+
+WORKDIR /app
+
+COPY ./Configs /Configs
+COPY ./wait-for.sh /
+
+COPY --from=builder /build/Ri-Blog .
+
+EXPOSE 8000
+
+RUN set -eux; \
+	apt-get update; \
+	apt-get install -y \
+		--no-install-recommends \
+		netcat; \
+        chmod 755 wait-for.sh
